@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.75em;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+h3 {
+  border: 1px solid black;
+  border-top: none;
+  border-right: none;
+  font-size: 1.25em;
+  float: right;
+  position: relative;
+  text-align: center;
+  width: 100px;
+}
+
+p {
+  float: left;
+  padding: 10px 20px;
+}
+
+.section {
+  background-color: #BADA55;
+  margin-bottom: 20px;
+}
+
+.section:first-child {
+  margin-right: 10px;
+}
+
+.section:nth-child(2) {
+  margin-left: 10px;
+}
+
+.row {
+  padding: 20px;
+  width: 100%;
+}
+
+#chicken {
+  background-color: #7555DA;
+}
+
+#beef {
+  background-color: #DA7555;
+}
+
+#sushi {
+  background-color: #55BADA;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    border: 1px solid black;
+    margin: 10px;
+    width: calc(33% - 20px);
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px){
+  .col-md-6, .col-md-12 {
+    border: 1px solid black;
+    float: left;
+  }
+  .col-md-6 {
+    width: calc(50% - 10px);
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px){
+  .col-sm-12 {
+    border: 1px solid black;
+    float: left;
+    margin: 10px;
+    width: calc(100% - 20px);
+  }
+}
